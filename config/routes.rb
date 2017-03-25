@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
  
  
- root 'pages#home'
+ root 'pages#home' 
  get 'about', to: 'pages#about' 
  
  

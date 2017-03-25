@@ -1,28 +1,101 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
-
 <style>
-
-.jumbotron {
-  background-image: asset-url('new_cover_page.png');
-  background-size: cover;
-  height: 550px;
+div.container {
+    width: 100%;
+    border: 1px solid gray;
 }
 
+header, footer {
+    padding: 1em;
+    color: white;
+    background:linear-gradient(to right, black, white);;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 5;
+    padding: 2em;
+
+}
+
+nav ul {
+    list-style-type: square;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
 </style>
 </head>
-
-
 <body>
+
+<div class="container">
+
+<header>
+   <h1>2306 on tour - Europe 2017</h1>
+</header>
   
-  <h1>Alpha Blog</h1>
+<nav>
+  <ul>
+    <li><a href="#"><%= link_to 'About', about_path %>  </a></li>
+    <li><a href="#">Rome</a></li>
+    <li><a href="#">Tuscany</a></li>
+    <li><a href="#">Emilia-Romagna</a></li>
+    <li><a href="#">Florance</a></li>
+    <li><a href="#">cinque terre</a></li>
+    <li><a href="#">Lake Como</a></li>
+    <li><a href="#">Verona</a></li>
+    <li><a href="#">Venice</a></li>
+    <li><a href="#">amalfi coast</a></li>
+    <li><a href="#">Scilly</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1> Italy </h1>
+  <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</article>
+
+<article> <%= image_tag('profileimage.png', style: "height: 1000px; width: 1700px") %> </article>
 
 
-<%= link_to 'About', about_path %>  
+<footer>Copyright &copy; PeteCorp.com/subsidiary of Campbell Corp</footer>
+
+</div>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
 
